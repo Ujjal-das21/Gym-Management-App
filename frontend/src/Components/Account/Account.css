@@ -1,0 +1,115 @@
+.account {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(162, 162, 162, 0.637),
+      rgba(36, 35, 35, 0.807)
+    ),
+    url("../images/cover-picture.jpg");
+  background-position: center;
+  background-size: 100% auto;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  background-blend-mode: screen;
+  height: 92vh;
+}
+
+.accountright {
+  background-color: rgba(0, 0, 0, 0.918);
+  padding: 6rem;
+  box-sizing: border-box;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  box-shadow: rgba(52, 52, 52, 0.359) 0px 25px 35px,
+    rgba(0, 0, 0, 0.39) 0px -24px 30px, rgba(1, 1, 1, 0.412) 0px 8px 12px,
+    rgba(53, 53, 53, 0.493) 0px 24px 26px, rgba(59, 59, 59, 0.389) 0px -6px 10px;
+}
+.accountright .btn {
+  width: 30%;
+  border-radius: 5px !important;
+  padding: 5px 0 2px 0 !important;
+  font-size: 1.2rem !important;
+  letter-spacing: 0;
+  box-shadow: 0px 5px rgb(170, 18, 18);
+}
+.accountright .btn:hover {
+  background-color: rgb(231, 21, 21) !important;
+  box-shadow: 0px 5px rgb(204, 20, 20);
+}
+.accountright .btn:active {
+  transform: translateY(5px);
+}
+.accountright img:hover {
+  transform: scale(1.1);
+}
+
+.accountright img {
+  transition: all 0.5s;
+}
+
+.accountright > h5 {
+  margin: 2vmax;
+}
+.accountright > a:link,
+.accountright > a:visited {
+  margin-bottom: 2rem;
+}
+
+.accountright > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1vmax;
+}
+
+.accountright > div > button:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.253);
+}
+.accountright > div > button {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.5s;
+  padding: 0.5vmax 1vmax;
+}
+
+@media screen and (max-width: 800px) {
+  .accountright {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .accountright {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .accountright {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .accountright {
+    width: 70%;
+  }
+}
+.headingName,
+.headingPassword {
+  color: white;
+  font-size: 2rem !important;
+  font-weight: 900 !important;
+  margin: 2.5rem !important;
+  text-align: center !important;
+}
+.headingPassword {
+  color: rgba(255, 255, 255, 0.782);
+  letter-spacing: 1px !important;
+  margin-top: 5.5rem !important;
+}

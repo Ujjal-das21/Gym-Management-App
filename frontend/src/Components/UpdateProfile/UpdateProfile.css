@@ -1,0 +1,77 @@
+.updateProfile {
+  height: 92vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgb(100, 100, 100),
+      rgba(36, 35, 35, 0.807)
+    ),
+    url("../images/cover-picture.jpg");
+  background-position: center;
+  background-size: 100% auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  background-blend-mode: screen;
+  position: relative;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+}
+
+.updateProfileForm {
+  box-shadow: rgba(52, 52, 52, 0.359) 0px 25px 35px,
+    rgba(0, 0, 0, 0.39) 0px -24px 30px, rgba(1, 1, 1, 0.412) 0px 8px 12px,
+    rgba(53, 53, 53, 0.493) 0px 24px 26px, rgba(59, 59, 59, 0.389) 0px -6px 10px;
+  background-color: rgba(0, 0, 0, 0.826);
+  height: 90%;
+  width: 30%;
+  box-sizing: border-box;
+  padding: 0 4rem 4rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.updateProfileForm > input[type="file"] {
+  border-radius: 30px;
+  margin: 2vmax;
+}
+
+.updateProfileForm > input[type="file"]::-webkit-file-upload-button {
+  background-color: rgb(38, 63, 173);
+  color: white;
+  width: 100%;
+  padding: 1vmax;
+  border-radius: 30px;
+  border: none;
+  font: 100 1.2rem "Roboto", sans-serif;
+  cursor: pointer;
+}
+.containerProfile1 {
+  background-color: rgba(0, 0, 0, 0.216);
+  padding: 5rem;
+  padding-top: 6rem;
+  width: 100%;
+}
+.containerProfile1 .avatarContainer {
+  box-shadow: rgba(210, 215, 220, 0.578) 0px 0px 0px 2px,
+    rgba(208, 209, 210, 0.752) 0px 4px 6px -1px,
+    rgba(224, 222, 222, 0.856) 0px 1px;
+}
+.containerProfile1 .upload .round {
+  top: 10rem;
+  right: -1.5rem;
+}
+
+.updateProfileForm .inputContainerPassword {
+  margin-top: 1rem;
+}
+@media screen and (max-width: 1300px) {
+  .updateProfileForm {
+    height: 100%;
+  }
+}

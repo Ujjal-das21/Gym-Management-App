@@ -1,0 +1,150 @@
+.register {
+  height: 100vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(162, 162, 162, 0.637),
+      rgba(36, 35, 35, 0.807)
+    ),
+    url("../images/cover-picture.jpg");
+  background-position: center;
+  background-size: 100% auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+  background-blend-mode: screen;
+}
+
+.registerForm {
+  height: 81%;
+  width: 30%;
+  background-color: rgba(0, 0, 0, 0.899);
+  padding-top: 4rem;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  box-shadow: rgba(52, 52, 52, 0.359) 0px 25px 35px,
+    rgba(0, 0, 0, 0.39) 0px -24px 30px, rgba(1, 1, 1, 0.412) 0px 8px 12px,
+    rgba(53, 53, 53, 0.493) 0px 24px 26px, rgba(59, 59, 59, 0.389) 0px -6px 10px;
+  animation: moveLikeABook 0.5s ease-in;
+  animation-fill-mode: backwards;
+}
+.registerForm .inputText:first-of-type {
+  z-index: 555;
+}
+.registerForm > input[type="file"] {
+  margin: 2vmax;
+}
+
+.registerForm > input[type="file"]::-webkit-file-upload-button {
+  width: 100%;
+  padding: 1vmax;
+
+  border: none;
+  font: 100 1.2rem "Roboto", sans-serif;
+}
+
+.registerForm > a {
+  align-self: flex-end;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.342);
+  margin: 2vmax;
+}
+
+.registerForm .bg-red {
+  background-color: red;
+  overflow: visible !important;
+}
+.upload {
+  width: 100px;
+  position: relative;
+  margin: auto;
+}
+
+.upload img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 2px solid #eaeaea;
+  object-fit: cover;
+  object-position: center;
+}
+
+.upload .round {
+  position: absolute;
+  bottom: -1rem;
+  right: 0;
+  background: rgba(227, 44, 44, 0.96);
+  width: 32px;
+  height: 32px;
+  line-height: 33px;
+  text-align: center;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(80%, 0);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.upload .round input[type="file"] {
+  position: absolute;
+  transform: scale(2);
+  opacity: 0;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  cursor: pointer;
+}
+.registerForm > .loginLink:link,
+.registerForm > .loginLink:visited {
+  color: rgba(255, 255, 255, 0.496);
+  font-size: 1.2rem;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s;
+  letter-spacing: 1.5px;
+}
+.registerForm > .loginLink:hover,
+.registerForm > .loginLink:active {
+  color: white;
+  font-size: 1.21rem;
+  border-bottom: 1px solid white;
+  text-shadow: 0px -1px 5px rgba(255, 255, 255, 0.847);
+}
+.registerFormImageContainer {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(162, 162, 162, 0.297),
+      rgba(23, 23, 23, 0.807)
+    ),
+    url("../images/cover-picture.jpg");
+  clip-path: polygon(0 0, 100% 0, 100% 65%, 0 85%);
+  background-position: top;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  height: 30rem;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-blend-mode: screen;
+}
+.upload .round:hover {
+  transform: translate(80%, -1%);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px, 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.upload .round:active {
+  transform: translate(80%, 1%);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px, 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0px -1.5px 0px inset;
+}

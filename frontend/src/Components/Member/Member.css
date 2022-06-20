@@ -1,0 +1,193 @@
+.post {
+  width: 50rem;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  display: flex;
+  box-shadow: rgba(255, 255, 255, 0.893) 0px 1px 5px 0px;
+}
+
+.postContainer1 {
+  padding: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.postContainer2 {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 2rem;
+}
+.postHeader {
+  display: flex;
+
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.postHeader > button {
+  border-radius: 5px;
+  color: rgba(0, 0, 0, 0.582);
+}
+
+.post > img {
+  width: 100%;
+}
+
+.postDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.postDetails > a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  margin: 1vmax;
+}
+.postFooter {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: -4rem;
+}
+
+.postFooter > button {
+  color: rgba(0, 0, 0, 0.767);
+  margin: 0 1vmax;
+  border-radius: 100%;
+  transition: all 0.3s;
+}
+
+.postFooter > button:hover {
+  transform: translateY(-4px);
+}
+
+.postFooter > button > svg {
+  font-size: 1.7vmax;
+}
+
+.DialogBox {
+  box-shadow: rgba(52, 52, 52, 0.359) 0px 25px 35px,
+    rgba(0, 0, 0, 0.39) 0px -24px 30px, rgba(1, 1, 1, 0.412) 0px 8px 12px,
+    rgba(53, 53, 53, 0.493) 0px 24px 26px, rgba(59, 59, 59, 0.389) 0px -6px 10px;
+  background-color: rgba(0, 0, 0, 0.907);
+  min-width: 500px;
+  height: 80vh;
+  padding: 2vmax;
+  color: white;
+  text-align: center;
+  letter-spacing: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5rem;
+  text-shadow: 0.4px 0.41px white;
+}
+.commentForm {
+  display: flex;
+  flex-direction: column;
+  margin: 1vmax;
+  align-self: stretch;
+  gap: 2rem;
+}
+
+.commentForm > button {
+  margin-top: 2rem !important;
+  border-radius: 0%;
+  width: 70%;
+  align-self: center;
+  display: block;
+}
+.personName {
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+  text-shadow: 0.2px 0.2px black;
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 600px) {
+  .postFooter > button > svg {
+    font-size: 6vw;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .post {
+    width: 45rem;
+    border-radius: 0;
+    box-shadow: none;
+    border: 1px solid rgba(0, 0, 0, 0.068);
+    padding: 0 0 4vw;
+    margin: 0;
+    flex-direction: column;
+    position: relative;
+  }
+  .postContainer2 {
+    align-items: center;
+  }
+
+  .postHeader {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+  }
+}
+@media screen and (max-width: 300px) {
+  .postHeader {
+    right: 2rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .DialogBox {
+    min-width: 400px;
+  }
+  .commentForm > input {
+    width: 50%;
+  }
+  .commentForm > button {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .DialogBox {
+    min-width: 300px;
+  }
+  .commentForm > input {
+    width: 60%;
+  }
+  .commentForm > button {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 350px) {
+  .DialogBox {
+    min-width: 250px;
+  }
+  .commentForm > input {
+    width: 70%;
+  }
+  .commentForm > button {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .DialogBox {
+    min-width: 200px;
+  }
+  .commentForm > input {
+    width: 80%;
+  }
+  .commentForm > button {
+    width: 80%;
+  }
+}

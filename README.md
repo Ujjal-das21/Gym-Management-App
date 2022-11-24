@@ -1,5 +1,5 @@
 
-# GYM MANAGEMENET SYSTEM
+# GYM MANAGEMENT SYSTEM
 
 Gym Management System is an administrative interface for the records of the  gym members.
 
